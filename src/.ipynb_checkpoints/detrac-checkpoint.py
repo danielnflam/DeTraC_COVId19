@@ -215,7 +215,7 @@ def init_folders(path: str) -> bool:
 
     if not os.path.exists(path):
         print(f"{path} doesn't exist. Initializing...")
-        os.makedirs(path)
+        os.mkdir(path)
         return True
     return False
 
